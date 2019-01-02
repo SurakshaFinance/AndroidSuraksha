@@ -1,6 +1,7 @@
 package suraksha.in.suraksha;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -42,10 +43,17 @@ public class AgentLoginActivity extends SurakshaActivity {
         } else {
             if (agentLogin(agentIdInString, agentPasswordInString)) {
                 makeToast(false, "Login Successful");
+                goToHomeActivity();
+                
             } else {
                 makeToast(true, "Login Failed");
             }
         }
+    }
+
+    private void goToHomeActivity() {
+        Intent inent = new Intent(this, AgentHomeActivity.class);
+        startActivity(inent);
     }
 
     private boolean agentLogin(String userName, String password) {
