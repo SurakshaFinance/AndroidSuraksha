@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".AgentHomeActivity"
-    tools:showIn="@layout/app_bar_agent_home">
+    tools:context=".CustomerManagementActivity"
+    tools:showIn="@layout/activity_customer_management">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,6 +51,5 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-
 
 </android.support.constraint.ConstraintLayout>

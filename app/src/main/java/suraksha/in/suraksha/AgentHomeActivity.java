@@ -1,5 +1,6 @@
 package suraksha.in.suraksha;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -59,7 +60,9 @@ public class AgentHomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_my_profile) {
+            return true;
+        }else if(id == R.id.action_agent_logout){
             return true;
         }
 
@@ -72,9 +75,10 @@ public class AgentHomeActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        /*if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.customer) {
+            //startActivity(new Intent(this, CustomerManagementActivity.class));
+        }
+        /* else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
 
