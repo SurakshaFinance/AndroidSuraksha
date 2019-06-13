@@ -9,21 +9,22 @@
             android:icon="@drawable/ic_menu_send"
             android:title="Today's Summary" />
         <item
+            android:id="@+id/collection"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Collection" />
+        <item
             android:id="@+id/customer"
             android:icon="@drawable/ic_menu_send"
             android:title="Customer" />
         <item
-            android:id="@+id/products"
-            android:icon="@drawable/ic_menu_send"
-            android:title="Products" />
-        <item
-            android:id="@+id/find_customer"
-            android:icon="@drawable/ic_menu_send"
-            android:title="View Customer" />
-        <item
             android:id="@+id/settings"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:icon="@drawable/ic_menu_send"
+            android:title="Settings" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_menu_send"
+            android:title="About" />
+
     </group>
 
 </menu>

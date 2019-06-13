@@ -20,10 +20,6 @@
             android:name=".AgentHomeActivity"
             android:label="@string/title_activity_agent_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".CustomerManagementActivity"
-            android:label="@string/title_activity_customer_management"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

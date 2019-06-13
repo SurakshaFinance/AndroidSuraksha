@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/theamColor">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/side_nav_bar"
+            android:orientation="vertical">
+            <TextView
+                android:layout_margin="15dp"
+                android:id="@+id/text_view_amount_lable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Amount Collected"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/text_view_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="10000.00"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="50dp"/>
+            <TextView
+                android:id="@+id/text_view_date_lable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Last updated on"
+                android:textColor="#ffffff"
+                android:textSize="10dp"/>
+            <TextView
+                android:paddingBottom="20dp"
+                android:id="@+id/text_view_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="12-09-2019"
+                android:textColor="#ffffff"
+                android:textSize="15dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

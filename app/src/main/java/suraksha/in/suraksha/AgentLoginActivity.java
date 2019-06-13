@@ -3,6 +3,8 @@ package suraksha.in.suraksha;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -31,6 +33,8 @@ public class AgentLoginActivity extends SurakshaActivity {
         agentId = (EditText) findViewById(R.id.agent_id_text);
         agentPassword = (EditText) findViewById(R.id.agent_password_text);
         loginButton = (Button) findViewById(R.id.btn_login);
+        agentId.setText("");
+        agentPassword.setText("");
     }
 
     public void onClickOfLogin(View v) {
@@ -49,6 +53,11 @@ public class AgentLoginActivity extends SurakshaActivity {
                 makeToast(true, "Login Failed");
             }
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        finishAffinity();
     }
 
     private void goToHomeActivity() {
