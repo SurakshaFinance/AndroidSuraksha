@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/theamColor">
-    <!--<ScrollView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
@@ -11,27 +11,114 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="horizontal">
-                <ImageButton
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     android:layout_weight="1"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/view_cust" />
-                <ImageButton
+                    android:clickable="true"
+                    android:onClick="viewCustomer"
+                    android:background="@drawable/button_selector">
+                    <ImageView
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/pigmy_collection"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pigmy"
+                        android:textColor="#43C4F7"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/view_cust" />
-
-
-
+                    android:clickable="true"
+                    android:background="@drawable/button_selector">
+                    <ImageView
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:src="@drawable/loan_collection"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#43C4F7"
+                        android:textSize="20dp"
+                        android:text="Loan"
+                        android:paddingBottom="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:background="@drawable/button_selector">
+                    <ImageView
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/chit_fund"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chit Fund"
+                        android:textColor="#43C4F7"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:background="@drawable/button_selector">
+                    <ImageView
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:src="@drawable/status_enquiry"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#43C4F7"
+                        android:textSize="20dp"
+                        android:text="Status Enquiry"
+                        android:paddingBottom="10dp"/>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-
-
-
-
-    </ScrollView>-->
+    </ScrollView>
 </LinearLayout>

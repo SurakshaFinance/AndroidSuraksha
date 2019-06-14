@@ -138,7 +138,6 @@ public class AgentHomeActivity extends AppCompatActivity
 
     public void viewCustomer(View view){
 
-        System.out.println("View Customer");
     }
 
 }
