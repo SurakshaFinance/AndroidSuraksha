@@ -21,7 +21,7 @@
             android:textColor="#ffffff"
             android:textStyle="bold"
             android:textSize="30dp"
-            android:text="SURAKSHA"
+            android:text="Android"
             android:layout_height="wrap_content" />
 
 

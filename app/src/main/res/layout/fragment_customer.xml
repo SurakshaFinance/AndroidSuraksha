@@ -13,13 +13,13 @@
             android:orientation="vertical" >
 
             <LinearLayout
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:background="@drawable/side_nav_bar">
+                android:background="#ffffff">
                 <ImageView
                     android:id="@+id/create_customer"
                     android:layout_width="60dp"
@@ -30,18 +30,18 @@
                     android:layout_height="60dp"
                     android:text="Create Customer"
                     android:gravity="center"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="20dp"
                     android:layout_alignRight="@+id/create_customer"/>
             </LinearLayout>
             <LinearLayout
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:background="@drawable/side_nav_bar">
+                android:background="#ffffff">
                 <ImageView
                     android:id="@+id/update_customer"
                     android:layout_width="60dp"
@@ -52,7 +52,7 @@
                     android:layout_height="60dp"
                     android:text="Update Customer"
                     android:gravity="center"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="20dp"
                     android:layout_alignRight="@+id/update_customer"/>
             </LinearLayout>

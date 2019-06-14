@@ -14,7 +14,7 @@ public class ToastHelper {
     public static void makeToast(ViewGroup viewGroup, LayoutInflater inflater, Context applicationContext, boolean isError, String displayMessage) {
         View toastLayout = inflater.inflate(R.layout.suraksha_toast, viewGroup);
         Toast toast = new Toast(applicationContext);
-        int color = isError ? Color.parseColor("#E74C3C") : Color.parseColor("#77ab59");
+        int color = isError ? Color.parseColor("#E74C3C") : Color.parseColor("#43C4F7");
         toast.setView(toastLayout);
         TextView text = (TextView) toastLayout.findViewById(R.id.suraksha_toast_text);
         text.setText(displayMessage);

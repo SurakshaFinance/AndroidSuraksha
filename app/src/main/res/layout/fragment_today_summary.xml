@@ -1,54 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/theamColor">
-    <ScrollView
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/theamColor"
+        android:focusable="true">
         <LinearLayout
-            android:layout_margin="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@drawable/side_nav_bar"
+            android:layout_height="120dp"
+            android:background="@drawable/button"
             android:orientation="vertical">
             <TextView
-                android:layout_margin="15dp"
+                android:layout_marginTop="5dp"
                 android:id="@+id/text_view_amount_lable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Amount Collected"
-                android:textColor="#ffffff"
-                android:textStyle="bold"
-                android:textSize="25dp"/>
+                android:textColor="@color/textWhite"
+                android:textSize="15dp"/>
             <TextView
                 android:id="@+id/text_view_amount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="10000.00"
-                android:textColor="#ffffff"
+                android:text="₹10000.00"
+                android:textColor="@color/textWhite"
                 android:textStyle="bold"
-                android:textSize="50dp"/>
+                android:textSize="35dp"/>
             <TextView
                 android:id="@+id/text_view_date_lable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Last updated on"
-                android:textColor="#ffffff"
+                android:textColor="@color/textWhite"
                 android:textSize="10dp"/>
             <TextView
-                android:paddingBottom="20dp"
+                android:paddingBottom="5dp"
                 android:id="@+id/text_view_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="12-09-2019"
-                android:textColor="#ffffff"
+                android:textColor="@color/textWhite"
                 android:textSize="15dp"/>
         </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/theamColor">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
