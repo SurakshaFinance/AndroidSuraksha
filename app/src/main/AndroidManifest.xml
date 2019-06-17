@@ -9,6 +9,12 @@
         android:roundIcon="@drawable/suraksha_ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SuccessActivity"></activity>
+        <activity android:name=".FailedActivity" />
+        <activity android:name=".customer.CustomerAccountDetails" />
+        <activity android:name=".customer.AddNewCustomer" />
+        <activity android:name=".customer.UpdateCustomerProfile" />
+        <activity android:name=".customer.ViewCustomerProfile" />
         <activity android:name=".AgentLoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="10dp">
+    <TextView
+        android:id="@+id/customer_popup_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Customer"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/customer_id_or_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Customer ID/Mobile No."
+            android:inputType="text"
+            android:background="@color/theamColor"
+            android:padding="10dp"/>
+        <Button
+            android:id="@+id/fetch_customer_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fetch Details"
+            android:background="@drawable/button"
+            android:textColor="#ffffff"
+            android:padding="10dp"/>
+    </LinearLayout>
+</LinearLayout>

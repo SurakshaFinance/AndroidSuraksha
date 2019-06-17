@@ -7,6 +7,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -17,6 +18,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.QuickContactBadge;
+import android.widget.TextView;
 
 import suraksha.in.fragments.AboutFragment;
 import suraksha.in.fragments.CollectionFragment;
@@ -24,6 +28,10 @@ import suraksha.in.fragments.CustomerFragment;
 import suraksha.in.fragments.SettingsFragment;
 import suraksha.in.fragments.TodaySummaryFragment;
 import suraksha.in.helpers.ToastHelper;
+import suraksha.in.suraksha.customer.AddNewCustomer;
+import suraksha.in.suraksha.customer.CustomerAccountDetails;
+import suraksha.in.suraksha.customer.UpdateCustomerProfile;
+import suraksha.in.suraksha.customer.ViewCustomerProfile;
 
 public class AgentHomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -137,7 +145,78 @@ public class AgentHomeActivity extends AppCompatActivity
     }
 
     public void viewCustomer(View view){
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(AgentHomeActivity.this);
+        View mView = getLayoutInflater().inflate(R.layout.view_customer_popup,null);
+        TextView popUpLabel = mView.findViewById(R.id.customer_popup_label);
+        Button viewCustomer = mView.findViewById(R.id.fetch_customer_profile);
+        viewCustomer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inent = new Intent(v.getContext(), ViewCustomerProfile.class);
+                startActivity(inent);
+            }
+        });
+        popUpLabel.setText("View Customer");
+        mBuilder.setView(mView);
+        mBuilder.create().show();
+    }
 
+    public void updateProfile(View view){
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(AgentHomeActivity.this);
+        View mView = getLayoutInflater().inflate(R.layout.view_customer_popup,null);
+        TextView popUpLabel = mView.findViewById(R.id.customer_popup_label);
+        popUpLabel.setText("Update Customer");
+        Button updateCustomer = mView.findViewById(R.id.fetch_customer_profile);
+        updateCustomer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inent = new Intent(v.getContext(), UpdateCustomerProfile.class);
+                startActivity(inent);
+            }
+        });
+        mBuilder.setView(mView);
+        mBuilder.create().show();
+    }
+
+    public void statusEnquiry(View view){
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(AgentHomeActivity.this);
+        View mView = getLayoutInflater().inflate(R.layout.status_enquiry_popup,null);
+        mBuilder.setView(mView);
+        mBuilder.create().show();
+    }
+
+    public void accountDetails(View view){
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(AgentHomeActivity.this);
+        View mView = getLayoutInflater().inflate(R.layout.view_customer_popup,null);
+        TextView popUpLabel = mView.findViewById(R.id.customer_popup_label);
+        popUpLabel.setText("Account Details");
+        Button updateCustomer = mView.findViewById(R.id.fetch_customer_profile);
+        updateCustomer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inent = new Intent(v.getContext(), FailedActivity.class);
+                inent.putExtra("title","Account Details");
+                startActivity(inent);
+            }
+        });
+        mBuilder.setView(mView);
+        mBuilder.create().show();
+    }
+
+    public void addCustomer(View view){
+        Intent inent = new Intent(view.getContext(), AddNewCustomer.class);
+        startActivity(inent);
+    }
+
+    public void myCustomer(View view){
+
+    }
+
+    public void changePassword(View view){
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(AgentHomeActivity.this);
+        View mView = getLayoutInflater().inflate(R.layout.change_password_popup,null);
+        mBuilder.setView(mView);
+        mBuilder.create().show();
     }
 
 }

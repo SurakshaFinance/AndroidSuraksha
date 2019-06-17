@@ -23,7 +23,6 @@
                     android:orientation="vertical"
                     android:layout_weight="1"
                     android:clickable="true"
-                    android:onClick="viewCustomer"
                     android:background="@drawable/button_selector">
                     <ImageView
                         android:layout_marginLeft="25dp"
@@ -102,6 +101,7 @@
                     android:orientation="vertical"
                     android:layout_weight="1"
                     android:clickable="true"
+                    android:onClick="statusEnquiry"
                     android:background="@drawable/button_selector">
                     <ImageView
                         android:layout_marginLeft="25dp"
